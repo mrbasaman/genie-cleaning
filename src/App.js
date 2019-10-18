@@ -1,8 +1,9 @@
-// Library imports aka from an npm 
+// Library imports aka from an npm
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Other files in project imports
+import { HOME, ABOUT } from "./constants/Routes";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -23,10 +24,10 @@ function App() {
         of them to render at a time
       */}
       <Switch>
-        <Route exact path="/">
+        <Route exact path={HOME}>
           <Home />
         </Route>
-        <Route path="/about">
+        <Route path={ABOUT}>
           <About />
         </Route>
       </Switch>
