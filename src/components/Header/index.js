@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { HOME, ABOUT } from "../../constants/Routes";
+import { HOME, ABOUT, CONTACT } from "../../constants/Routes";
 
 import "./index.css";
 
@@ -31,7 +31,7 @@ export default function Header() {
             <a>Our jobs</a>
           </li>
           <li className="menu-item">
-            <a>Contact</a>
+            <Link to={CONTACT}>Contact</Link>
           </li>
           <li className="menu-item">
             <p>Call for a free quotation</p>
