@@ -17,6 +17,10 @@
   color: white;
 }
 
+.main {
+  flex: 1;
+}
+
 .App-link {
   color: #09d3ac;
 }
